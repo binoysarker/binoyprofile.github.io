@@ -1,0 +1,206 @@
+/*	Less Framework 4 with 16/24 type presets
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+
+
+
+
+
+/*		Default Layout: 960px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+div.wrap{
+	width: 960px;
+	display: block;
+	margin:0 auto;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.selectnav{
+		display: none;
+
+}
+footer{
+	width: 100%;
+}
+h2{
+	display: block;
+}
+
+
+
+
+
+/*
+		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	div.wrap{
+		width: 95%;
+		
+	}
+	section div.main-content{
+		width: 100%;
+	}
+	section div.main-content div.article-wrapper{
+		width: 59%;
+		margin-right: 3%;
+	}
+	section div.main-content div.aside-wrapper{
+		width: 37%;
+		margin-left: 1%;
+	}
+	figure{
+		width: 100%;
+	}
+	div.navbar{
+		display: block;
+
+	}
+	
+	
+
+
+
+
+}
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	div.header-bg h2{
+		display: block;
+		text-align: center;
+		font-size: 30px;
+	}
+	div.header-bg p{
+		display: block;
+		text-align: center;
+		font-size: 20px;
+	}
+	.theme-bar.slider-wrapper{
+		display: none;
+	}
+	section div.main-content div.article-wrapper{
+		width: 59%;
+		margin-right: 3%;
+	}
+	section div.main-content div.aside-wrapper{
+		width: 37%;
+		margin-left: 1%;
+	}
+	section div.main-content article.main-article{
+		width: 100%;
+	}
+	section div.main-content aside.main-aside{
+		width: 94%;
+	}
+	section div.main-content aside.main-aside ul.sidebar{
+		width: 97%;
+	}
+	
+	
+
+
+}
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	div.header-bg h2{
+		display: block;
+		text-align: center;
+		font-size: 30px;
+	}
+	div.header-bg p{
+		display: block;
+		text-align: center;
+		font-size: 20px;
+	}
+	.theme-bar.slider-wrapper{
+		display: none;
+	}
+	section div.main-content div.article-wrapper{
+		float: none;
+	}
+	section div.main-content article.main-article{
+		width: 100%;
+	}
+	section div.main-content aside.main-aside{
+		width: 94%;
+	}
+	section div.main-content aside.main-aside ul.sidebar{
+		width: 97%;
+	}
+	
+	
+
+
+
+
+
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	div.wrap{
+		width: 95%;
+		
+	}
+	section div.main-content{
+		width: 100%;
+	}
+	section div.main-content div.article-wrapper{
+		width: 59%;
+	}
+	section div.main-content div.aside-wrapper{
+		width: 37%;
+		margin-left: 1%;
+	}
+	.theme-bar.slider-wrapper{
+		width: 94%;
+	}
+	
+
+
+	
+}
